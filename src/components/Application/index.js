@@ -28,7 +28,7 @@ export default function Application() {
           <button className="button-add">Add</button>
           {/* <div className="line"></div> */}
         </div>
-        <div>
+        <div style={{marginRight:"6rem"}}>
           <div className="titles" style={{ display: "flex",gap:"1rem" }}>
             <div className="small-box"></div>
             <h2>Title</h2>
