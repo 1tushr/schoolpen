@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./headLine.css"; // Make sure you have the CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,8 +10,15 @@ import {
   faUnderline,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import Application from "./Application";
 
 export default function HeadLine() {
+  const [applicationVisible, setApplicationVisible] = useState(false);
+
+  const toggleApplication = () => {
+    setApplicationVisible(!applicationVisible);
+  };
+
   return (
     <div className="parent-div">
       <ul className="info-list">
@@ -73,21 +80,19 @@ export default function HeadLine() {
             rows="10"
             placeholder="Content"
           ></textarea>
-
-          <div>
-            <div style={{display:'flex'}}>
-             <h4>Applications</h4>
-             <FontAwesomeIcon icon={faLink} />
           
+          {/* <div className="toggle">
+          <span className="plus-icons" onClick={toggleApplication}>
+            <div className="option">
+              <h4>Application</h4>
+              <FontAwesomeIcon icon={faPlus} />
             </div>
-          
-           
-            <div className="square-plus">
-          <span className="plus-icon">
-            <FontAwesomeIcon icon={faPlus} />
           </span>
         </div>
-          </div>
+        
+        {applicationVisible && <Application />} */}
+        
+        <Application></Application>
         </div>
       </div>
     </div>

@@ -1,4 +1,8 @@
 .app-container {
     display: flex;
   }
-  
+  @media (max-width:768px) {
+    .app-container{
+      display: block;
+    }
+  }

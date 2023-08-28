@@ -1,0 +1,112 @@
+.heading{
+    width: 22rem;
+    height: 13rem;
+    border: 2px solid  rgb(234, 234, 234);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-add{
+    border-radius: 1rem;
+    background: none;
+    width: 7rem;
+    height: 2rem;
+    margin: 1rem;
+    margin-left: 15rem;
+    color: blue;
+    border-style: none;
+    border :2px solid blue
+}
+
+.line{
+    border: 1px solid grey;
+    rotate: 90deg;
+    width: 94%;
+    position: relative;
+    top: -9rem;
+    left: 14rem;
+}
+
+.small-box{
+    width: 5rem;
+    height: 4rem;
+    border: 2px solid rgb(234, 234, 234);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.para{
+    position: relative;
+    left: 6rem;
+    margin: 0;
+    top: -30px;
+}
+
+
+
+
+@media (max-width: 1400px) {
+    .heading {
+      width: 90%; /* Adjust width to fit the container */
+      height: auto; /* Let the height adjust based on content */
+      border: 2px solid rgb(234, 234, 234);
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px; /* Add margin for spacing */
+    }
+  
+    .button-add {
+      border-radius: 1rem;
+      background: none;
+      width: auto; /* Let the width adjust based on content */
+      height: 2rem;
+      margin: 1rem;
+      margin-left: 0; /* Remove margin-left for small screens */
+      color: blue;
+      border-style: none;
+      border: 2px solid blue;
+    }
+  
+    .line {
+      border: 1px solid grey;
+      transform: rotate(90deg); /* Use 'transform' instead of 'rotate' */
+      width: 100%; /* Adjust width to fit the container */
+      position: static; /* Reset position for small screens */
+      top: auto;
+      left: auto;
+    }
+  
+    .small-box {
+        width: 90%;
+        height: 6rem;
+      border: 2px solid rgb(234, 234, 234);
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px; /* Add margin for spacing */
+    }
+  
+    .para {
+      position: relative;
+      left: 0; /* Reset left position for small screens */
+      margin: 0;
+      top: -10px; /* Adjust top position for smaller screens */
+    }
+    .titles{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  

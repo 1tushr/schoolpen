@@ -1,43 +1,111 @@
 .sidebar {
-    width: 250px;
-    background-color: rgb(142,97,216);
-    color: white;
-    padding: 20px;
-    position: relative;
-    height: 100%;
-  }
-  
-  .sidebar h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .dashboard-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dashboard-items li {
-    font-size: 18px;
-    margin-bottom: 5px;
-    display: flex;
-    gap: 1rem;
-    margin: 1rem;
-    align-items: center;
-  }
-  
-  .item-icon {
-    margin-right: 10px;
-    font-size: 20px;
-  }
+  width: 250px;
+  background-color: rgb(142, 97, 216);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
 
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-  
-  
-  /* Add styles for active item */
-  .dashboard-items li.active {
-    background-color: #555;
-    border-radius: 5px;
+.dashboard-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-items li {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+
+.item-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Add styles for active item */
+.dashboard-items li.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Customize the scrollbar */
+.scrollable-content {
+  max-height: calc(100vh - 150px); /* Adjust the value as needed */
+  overflow-y: auto;
+}
+
+/* Style the scrollbar */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+}
+
+/* Style the scrollbar track */
+.scrollable-content::-webkit-scrollbar-track {
+  background: rgb(142, 97, 216);
+}
+
+/* Style the scrollbar thumb */
+.scrollable-content::-webkit-scrollbar-thumb {
+  background:  rgb(142, 97, 216);
+  border-radius: 4px;
+}
+
+/* Change scrollbar thumb color on hover */
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background:  rgb(142, 97, 216);
+}
+@media (max-width:1400px){
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20rem; /* Adjust the width as needed */
+    background-color: blueviolet;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Ensure the sidebar stays on top */
   }
   
+  .open {
+    width: 20rem;
+    transform: translateX(0);
+  }
+  
+  .closed {
+    width: 1rem;
+    transform: translateX(-20rem); /* Move the sidebar off-screen */
+    overflow: hidden;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1100; /* Ensure the hamburger is always on top */
+  }
+  
+  .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color:white;
+    margin: 5px 0;
+  }
+  
+  
+  
+}
