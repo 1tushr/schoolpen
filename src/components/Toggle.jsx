@@ -1,9 +1,8 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-
-export default function Toggle({ title,children }) {
+export default function Toggle({ title, children }) {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -12,78 +11,18 @@ export default function Toggle({ title,children }) {
 
   return (
     <div>
-          <div className="toggle">
-    <span className="plus-icons" onClick={toggleVisibility}>
-      <div className="option">
-        <h4>{title}</h4>
-        <FontAwesomeIcon icon={faPlus} />
+      <div className="toggle">
+        <span className="plus-icons" onClick={toggleVisibility}>
+          <div className="option">
+            <h4>{title}</h4>
+            <FontAwesomeIcon icon={faPlus} />
+          </div>
+        </span>
+        {visible && <div className="toggle-content">{children}</div>}
       </div>
-    </span>
-    {visible && (
-      <div className="toggle-content">
-        {/* Render the children components */}
-        {children}
-      </div>
-    )}
-  </div>
-    
     </div>
-
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 // import "./headLine.css"

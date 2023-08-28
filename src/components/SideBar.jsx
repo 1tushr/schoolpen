@@ -1,7 +1,20 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faBook, faBars,faCalendar, faBell, faBriefcase, faChartPie, faChalkboardTeacher, faClipboard, faGraduationCap, faComments} from "@fortawesome/free-solid-svg-icons";
-import "./sideBar.css"; // You can create this CSS file for styling
+import {
+  faHome,
+  faUser,
+  faBook,
+  faBars,
+  faCalendar,
+  faBell,
+  faBriefcase,
+  faChartPie,
+  faChalkboardTeacher,
+  faClipboard,
+  faGraduationCap,
+  faComments,
+} from "@fortawesome/free-solid-svg-icons";
+import "./sideBar.css";
 
 import logo from "../images/logo.png";
 import bottom from "../images/bottom.png";
@@ -30,7 +43,6 @@ const Sidebar = () => {
   ];
 
   return (
-    
     <div className={`sidebar ${isSidebarOpen ? "open" : "closed"}`}>
       <div className="hamburger" onClick={toggleSidebar}>
         <div className="hamburger-line"></div>
@@ -52,10 +64,26 @@ const Sidebar = () => {
             </li>
           ))}
           <li className="bottom-icon">
-            <img src={bottom} alt="Bottom Icon" style={{ width: "5rem", margin: "2rem", marginLeft: "5rem" }} />
+            <img
+              src={bottom}
+              alt="Bottom Icon"
+              style={{ width: "5rem", margin: "2rem", marginLeft: "5rem" }}
+            />
           </li>
           <li>
-            <p style={{ background: "rgb(222,217,255)", borderRadius: "1rem", width: "13rem", height: "3rem", fontSize: "small", color: "black", textAlign: "center" }}>Upgrade to <strong>Premium plan</strong> to unlock more features </p>
+            <p
+              style={{
+                background: "rgb(222,217,255)",
+                borderRadius: "1rem",
+                width: "13rem",
+                height: "3rem",
+                fontSize: "small",
+                color: "black",
+                textAlign: "center",
+              }}
+            >
+              Upgrade to <strong>Premium plan</strong> to unlock more features{" "}
+            </p>
           </li>
         </ul>
       </div>

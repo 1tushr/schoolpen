@@ -54,24 +54,24 @@
 
 @media (max-width: 1400px) {
     .heading {
-      width: 90%; /* Adjust width to fit the container */
-      height: auto; /* Let the height adjust based on content */
+      width: 90%; 
+      height: auto; 
       border: 2px solid rgb(234, 234, 234);
       border-radius: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      margin-bottom: 10px; /* Add margin for spacing */
+      margin-bottom: 10px;
     }
   
     .button-add {
       border-radius: 1rem;
       background: none;
-      width: auto; /* Let the width adjust based on content */
+      width: auto;
       height: 2rem;
       margin: 1rem;
-      margin-left: 0; /* Remove margin-left for small screens */
+      margin-left: 0; 
       color: blue;
       border-style: none;
       border: 2px solid blue;
@@ -79,9 +79,9 @@
   
     .line {
       border: 1px solid grey;
-      transform: rotate(90deg); /* Use 'transform' instead of 'rotate' */
-      width: 100%; /* Adjust width to fit the container */
-      position: static; /* Reset position for small screens */
+      transform: rotate(90deg);
+      width: 100%;
+      position: static; 
       top: auto;
       left: auto;
     }
@@ -95,14 +95,14 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      margin-bottom: 10px; /* Add margin for spacing */
+      margin-bottom: 10px; 
     }
   
     .para {
       position: relative;
-      left: 0; /* Reset left position for small screens */
+      left: 0; 
       margin: 0;
-      top: -10px; /* Adjust top position for smaller screens */
+      top: -10px; 
     }
     .titles{
         display: flex;

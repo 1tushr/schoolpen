@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./headLine.css"; // Make sure you have the CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -80,7 +80,7 @@ export default function HeadLine() {
             rows="10"
             placeholder="Content"
           ></textarea>
-          
+
           {/* <div className="toggle">
           <span className="plus-icons" onClick={toggleApplication}>
             <div className="option">
@@ -91,8 +91,8 @@ export default function HeadLine() {
         </div>
         
         {applicationVisible && <Application />} */}
-        
-        <Application></Application>
+
+          <Application></Application>
         </div>
       </div>
     </div>

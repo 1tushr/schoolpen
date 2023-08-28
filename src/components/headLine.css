@@ -31,7 +31,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-  border:2px solid  blue;
+  border: 2px solid blue;
   border-radius: 5rem;
 }
 .days p {
@@ -71,8 +71,6 @@
   font-size: inherit;
   outline: none;
 }
-
-/* Add media queries for responsiveness if needed */
 
 .formatting-icons {
   display: flex;
@@ -131,9 +129,8 @@
   width: 99%;
 }
 
-
 /*toggle css*/
-.toggle{
+.toggle {
   display: flex;
   flex-direction: row;
   border: 1px solid rgb(234, 234, 234);
@@ -142,10 +139,9 @@
   margin: 1rem;
   text-align: center;
   align-items: center;
-
 }
 
-.options{
+.options {
   margin-left: 2rem;
   display: flex;
   align-items: center;
@@ -155,18 +151,18 @@
 @media (max-width: 1400px) {
   .parent-div {
     margin-left: 0;
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
 
   .info-list {
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column; /*column layout */
     gap: 5px;
     margin: 0;
   }
 
   .info-list li {
-    width: auto; /* Let the width adjust based on content */
+    width: auto;
     margin-left: 0;
     margin-bottom: 5px;
   }
@@ -177,44 +173,44 @@
   }
 
   .main-content {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
 
   .formatting-icons {
-    flex-direction: row; /* Change to column layout */
+    flex-direction: row;
     gap: 5px;
-    width: auto; /* Let the width adjust based on content */
-    text-align: left; /* Adjust text alignment for smaller screens */
+    width: auto;
+    text-align: left;
     position: static;
     top: auto;
     left: auto;
   }
 
   .plus {
-    width: 2rem; /* Reduce width for smaller screens */
-    height: 2rem; /* Reduce height for smaller screens */
+    width: 2rem;
+    height: 2rem;
     position: relative;
     left: 14rem;
   }
 
   .square-plus {
-    width: 90%; /* Adjust width to fit the container */
-   
-    margin-top: 10px; /* Adjust margin for smaller screens */
+    width: 90%;
+
+    margin-top: 10px;
   }
 
   .application-wrapper {
-    padding: 10px; /* Adjust padding for smaller screens */
-    margin-top: 10px; /* Adjust margin for smaller screens */
+    padding: 10px;
+    margin-top: 10px;
   }
-  .input-box textarea{
+  .input-box textarea {
     width: 90%;
   }
-  .applications-rec{
+  .applications-rec {
     display: flex;
     flex-direction: column;
   }
-  .days{
+  .days {
     justify-content: space-evenly;
   }
 }
